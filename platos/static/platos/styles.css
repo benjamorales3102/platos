@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7ef, #f6f1ea);
+    color: #2d2d2d;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px 48px;
+}
+
+.hero {
+    background: #f4efe9;
+    border-radius: 18px;
+    padding: 28px 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    color: #7a3b1d;
+    font-size: 2.2rem;
+}
+
+.hero p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0 28px;
+    flex-wrap: wrap;
+}
+
+.search-form input {
+    flex: 1 1 280px;
+    min-width: 220px;
+    padding: 12px 14px;
+    border: 1px solid #d8c4aa;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.search-form button,
+.clear-search {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #b1653d;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.clear-search {
+    background: #8f4d32;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0 32px;
+}
+
+.stat-box {
+    background: white;
+    border-radius: 14px;
+    padding: 18px 20px;
+    border: 1px solid #e8dccb;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+}
+
+.stat-box strong {
+    display: block;
+    font-size: 1.4rem;
+    color: #8c4a2f;
+    margin-bottom: 8px;
+}
+
+.platos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.plato-card {
+    background: #fff;
+    border: 1px solid #eadcc5;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease;
+}
+
+.plato-card:hover {
+    transform: translateY(-3px);
+}
+
+.plato-card h2 {
+    margin-top: 0;
+    color: #4a2d22;
+    font-size: 1.4rem;
+}
+
+.plato-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.plato-card a,
+.btn-link {
+    display: inline-block;
+    margin-top: 8px;
+    background: #b1653d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.plato-card a:hover,
+.btn-link:hover {
+    background: #8f4d32;
+}
+
+.detail-card {
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #eadcc5;
+    padding: 28px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.detail-card h1 {
+    margin-top: 0;
+    color: #7a3b1d;
+    font-size: 2.2rem;
+}
+
+.detail-card .meta {
+    margin: 16px 0;
+    padding: 14px 16px;
+    background: #fff7ef;
+    border-left: 5px solid #c67e54;
+    border-radius: 10px;
+}
+
+.detail-card .meta p {
+    margin: 8px 0;
+    font-size: 1.05rem;
+}
+
+.no-results {
+    background: #fff;
+    border: 1px solid #e8dccb;
+    border-radius: 12px;
+    padding: 18px;
+    color: #5d463b;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #e4f7eb;
+    color: #1f6d42;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 14px 30px;
+    }
+
+    .hero h1,
+    .detail-card h1 {
+        font-size: 1.7rem;
+    }
+}
