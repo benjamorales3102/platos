@@ -1,0 +1,13 @@
+{extends "base.html"}
+{% block content %}
+    <h1>Bienvenido a la aplicación de Platos</h1>
+    <p>Explora nuestra colección de deliciosos platos.</p>
+
+    for plato in platos:
+        <div>
+            <h2>{{ plato.nombre }}</h2>
+            <p>{{ plato.descripcion }}</p>
+            <a href="{% url 'platos:detalle' plato.id %}">Ver detalles</a>
+        </div>
+    {% endfor %}
+{% endblock %}
