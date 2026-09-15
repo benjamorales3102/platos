@@ -1,0 +1,22 @@
+primeraconsulta:
+
+haz que el detalle calcule el precio ademas el 10% con la propina propina,detalle calcula además el precio con propina del 10% (redondeado a entero) y una etiqueta decidida con
+if, elif, else a partir de
+vegetariano y
+picante : "Apto para todos" si es vegetariano y no picante,
+"Contiene aji" si es picante, "Plato tradicional" en cualquier otro caso. Ambos se muestran en la página de
+detalle.
+
+segunda consulta:
+
+haz que la lista platos viva en views.py como datos_platos.py, el inicio debe comstrar la lista completa y 2 valores calculas con operadores: el precio de la carta
+ que sea redondeado a entero y la cant de platos vegetarianos se vean en la portada
+
+tercer consulta:
+crea una searchbar para buscar los platos 
+
+cuarta consulta:
+agrega filtros en el conjunto de las plantillas
+
+quinta consulta:
+crea un read.me con instruccion de como correr el proyecto
